@@ -46,7 +46,7 @@ const SignInAdmin = () => {
         localStorage.setItem("token", data.token);
       }
 
-      navigate("/dashboard");
+      navigate("/dashboardAdmin");
     } catch (err) {
       console.error("❌ Request failed:", err);
       setError("Something went wrong. Please try again.");

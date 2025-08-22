@@ -1,0 +1,148 @@
+.signin-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left Image */
+.signin-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.signin-image {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Right Form */
+.signin-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signin-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signin-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.signin-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.signin-title .highlight {
+  color: #f4a300;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.loading-message {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+.signin-btn {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signin-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.signin-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.forgot-password {
+  display: block;
+  margin: 15px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.store-buttons img {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .signin-left,
+  .signin-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .signin-left {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .signin-image {
+    width: 100%;
+    height: auto;
+  }
+}
